@@ -1,0 +1,114 @@
+body{
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+
+*, *::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	}
+
+
+	body{
+		display: grid;
+		grid-template-areas: 
+			"fejlec"
+			"kontent"
+			"lablec"
+		;
+		grid-template-rows: 1fr max-content;
+		min-height: 100vh;
+		position: relative;
+	}
+	header{
+		grid-area: fejlec;
+	}
+	
+	main{
+		grid-area: kontent;
+	}
+	footer{
+		grid-area: lablec;
+	}
+
+/*--layout_end--*/
+
+.nev{
+	background-color: black;
+	text-align: center;
+}
+.anna{
+	display: block;
+	color: white;
+	padding: 4rem;
+	font-size: 1rem;
+	letter-spacing: 4px;
+
+}
+.nev a{
+	text-decoration: none;
+	color: white;
+	float: left;
+	padding: 1rem;
+	margin: 3rem;
+	font-size: 20px;
+}
+.nev a:hover{
+	background-color: grey;
+	border-radius: 8rem;
+}
+
+.dokumentacio{
+	text-align: center;
+	padding: 10rem;
+	letter-spacing: 3;
+	font-size: 30px;
+}
+.cim{
+	display: block;
+	padding-bottom: 5rem;
+}
+.elso{
+	display: block;
+	padding: 2rem;
+}
+.harmas{
+	display: block;
+	padding: 3rem;
+}
+.negyes{
+	display: block;
+	padding: 3rem;
+}
+
+
+
+
+
+
+/*--footer--*/
+footer{
+	background-color: black;
+	
+}
+
+.contact{
+	font-size: 10px;
+	text-align: center;
+	color: #ffffff;
+}
+.instagram:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.facebook:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.email:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+/*--footer_end--*/
