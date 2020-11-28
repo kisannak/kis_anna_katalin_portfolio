@@ -1,0 +1,156 @@
+body{
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+
+*, *::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	}
+
+img{
+	max-width: 80%;
+}
+
+/*--layout--*/
+body{
+		display: grid;
+		grid-template-areas: 
+			"fejlec"
+			"kontent"
+			"lablec"
+		;
+		grid-template-rows: 1fr max-content;
+		min-height: 100vh;
+		position: relative;
+	}
+	header{
+		grid-area: fejlec;
+	}
+	
+	main{
+		grid-area: kontent;
+	}
+	footer{
+		grid-area: lablec;
+	}
+
+/*--layout_end--*/
+
+/*--header--*/
+.nev{
+	background-color: black;
+	text-align: center;
+
+}
+.anna{
+	display: block;
+	color: white;
+	padding: 4rem;
+	font-size: 1rem;
+	letter-spacing: 4px;
+
+}
+
+
+/*--header_end--*/
+
+
+/*--main--*/
+main{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.logo{
+	grid-column: 1/2;
+	grid-row: 1/2;
+	padding-bottom: 8rem;
+}
+.gombok{
+	text-align: center;
+	letter-spacing: 3px;
+	line-height: 4;
+	padding: 4rem;
+}
+.profil{
+	padding-top: 3rem;
+}
+.profil img{
+	border-radius: 2rem;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	padding: 1rem;
+}
+a:hover{
+	cursor: pointer;
+	padding: 1rem;
+	border: 1px solid black;
+	border-radius: 2rem;
+}
+
+
+/*--main_end--*/
+ 
+/*--footer--*/
+footer{
+	background-color: black;
+	
+}
+
+.contact{
+	font-size: 10px;
+	text-align: center;
+	color: #ffffff;
+}
+.instagram:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.facebook:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.email:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+/*--footer_end--*/
+
+
+	#szelesseg{
+	  color: #000000;
+	  font-size: .8rem;
+	  padding: 5px;
+	  background-color: #f3ff69;
+
+	}
+
+	@media only screen and (max-width: 319px ){
+		body{opacity: .5;}
+		#szelesseg{background-color: grey;}
+	}	
+	@media only screen and (min-width: 480px){
+		#szelesseg{
+			background-color: #90ee90;
+		}
+	}
+	@media only screen and (min-width: 768px){
+		#szelesseg{
+			background-color: #c9e5ff;
+		}
+	}
+	@media only screen and (min-width: 992px){
+		#szelesseg{
+			background-color: #b19CD9;
+		}
+	}
+	@media only screen and (min-width: 1200px){
+		#szelesseg{
+			background-color: #ED8A68;
+		}		
+	}

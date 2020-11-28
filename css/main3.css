@@ -1,0 +1,197 @@
+body{
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+
+*, *::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	}
+
+img{
+	max-width: 25%;
+}
+
+/*--layout--*/
+body{
+		display: grid;
+		grid-template-areas: 
+			"fejlectop"
+			"fejlec"
+			"kontent"
+			"lablec"
+		;
+		grid-template-rows: max-content 1fr max-content;
+		min-height: 100vh;
+		position: relative;
+	}
+	
+
+
+	header{
+		grid-area: fejlec;
+	}
+	main{
+		grid-area: kontent;
+	}
+	footer{
+		grid-area: lablec;
+	}
+
+/*--layout_end--*/
+
+/*--header--*/
+.fejlec_top{
+	display: block;
+	background-color: black;
+	text-align: center;
+	padding: 2rem;
+	}
+	
+
+}
+.vissza_gomb{
+	margin-left: 1rem;
+	font-size: 20px;
+	margin-bottom: 2rem;
+	max-width: max-content;
+	padding-top: 1rem;
+
+}
+.gomb{
+	display: inline;
+	margin-right: 3rem;
+	padding: .5rem;
+	
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.gomb:hover{
+		cursor: pointer;
+		background-color: grey;
+		border-radius: 2rem;
+		
+}
+.gomb2{
+	display: inline;
+	padding: .5rem;
+	
+}
+.gomb2:hover{
+	cursor: pointer;
+	background-color: grey;
+	
+	border-radius: 2rem;
+}
+
+
+
+
+/*--header_end--*/
+
+/*--main--*/
+
+.projektek_leiras{
+	background-color: #eee;
+	padding: 4rem;
+	text-align: center;
+	letter-spacing: 3px;
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+}
+.kepek{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: #ddd;
+	padding-top: 5rem;
+	margin-top: 5rem;
+
+}
+.kepek img{
+	max-width: 70%;
+	margin: 2rem;
+} 
+.kep1:hover{
+	cursor: pointer;
+	-webkit-box-shadow: -4px -7px 15px 5px rgba(0,0,0,0.46); 
+box-shadow: -4px -7px 15px 5px rgba(0,0,0,0.46);
+}
+.kep2:hover{
+	cursor: pointer;
+	-webkit-box-shadow: -4px -7px 15px 5px rgba(0,0,0,0.46); 
+box-shadow: -4px -7px 15px 5px rgba(0,0,0,0.46);
+}
+.kep3:hover{
+	cursor: pointer;
+	-webkit-box-shadow: -4px -7px 15px 5px rgba(0,0,0,0.46); 
+box-shadow: -4px -7px 15px 5px rgba(0,0,0,0.46);
+}
+.kep4:hover{
+	cursor: pointer;
+	-webkit-box-shadow: -4px -7px 15px 5px rgba(0,0,0,0.46); 
+box-shadow: -4px -7px 15px 5px rgba(0,0,0,0.46);
+}
+.kep5:hover{
+	cursor: pointer;
+	-webkit-box-shadow: -4px -7px 15px 5px rgba(0,0,0,0.46); 
+box-shadow: -4px -7px 15px 5px rgba(0,0,0,0.46);
+}
+.kep6:hover{
+	cursor: pointer;
+	-webkit-box-shadow: -4px -7px 15px 5px rgba(0,0,0,0.46); 
+box-shadow: -4px -7px 15px 5px rgba(0,0,0,0.46);
+}
+.kep7:hover{
+	cursor: pointer;
+	-webkit-box-shadow: -4px -7px 15px 5px rgba(0,0,0,0.46); 
+box-shadow: -4px -7px 15px 5px rgba(0,0,0,0.46);
+}
+.kep8:hover{
+	cursor: pointer;
+	-webkit-box-shadow: -4px -7px 15px 5px rgba(0,0,0,0.46); 
+box-shadow: -4px -7px 15px 5px rgba(0,0,0,0.46);
+}
+.kep9:hover{
+	cursor: pointer;
+	-webkit-box-shadow: -4px -7px 15px 5px rgba(0,0,0,0.46); 
+box-shadow: -4px -7px 15px 5px rgba(0,0,0,0.46);
+}
+
+/*--main_end--*/
+
+/*--footer--*/
+footer{
+	background-color: black;
+}
+
+.contact{
+	font-size: 10px;
+	text-align: center;
+	color: #ffffff;
+}
+.instagram:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.facebook:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.email:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+/*--footer_end--*/
+
+
+	#szelesseg{
+	  color: #000000;
+	  font-size: .8rem;
+	  padding: 5px;
+	  background-color: #f3ff69;
+
+	
